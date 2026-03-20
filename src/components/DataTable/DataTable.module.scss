@@ -1,0 +1,62 @@
+.wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+
+  @media (max-width: 768px) {
+    padding: 32px 16px 48px;
+  }
+}
+
+.header {
+  margin-bottom: 24px;
+
+  .title {
+    margin-bottom: 8px !important;
+  }
+
+  .description {
+    max-width: 720px;
+    margin-bottom: 0 !important;
+  }
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+
+  .search {
+    max-width: 420px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+
+    .search {
+      max-width: none;
+    }
+  }
+}
+
+.table {
+  :global(.ant-table) {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      overflow-x: auto;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
